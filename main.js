@@ -9,7 +9,7 @@ $.getJSON("data.json", function(data){
   	$('#topSpotsBody').append($("<tr>")
         .append($("<td>").append(topSpots.name))
         .append($("<td>").append(topSpots.description))
-		.append($("<td>").append(`<a href=${googleMaps}>Open In Google Maps</a>`))); 
+		    .append($("<td>").append(`<a href=${googleMaps}>Open In Google Maps</a>`))); 
 		
   });
 })
