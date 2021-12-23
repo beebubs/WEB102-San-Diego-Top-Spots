@@ -3,10 +3,6 @@ $(document).ready(function() {
 
 $.getJSON("data.json", function(data){
 	console.log(data); 
-	//var a = $('<a />')
-	//a.attr('href', www.google.com/maps/search/?api=1&query);
-	//a.text(desiredText);
-	//$('body').append(a + "%2C" + );
 	
   $(data).each(function(i, topSpots){
 	let googleMaps = ("https://www.google.com/maps/search/?api=1&query=" + topSpots.location[0] + "%2C" + topSpots.location[1])
